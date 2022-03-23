@@ -1,0 +1,27 @@
+{% include "header.html" %}
+{% if filename %}
+<div class="content">
+    <div class="container-fluid results-container">
+        <div class="row justify-content-center">
+            <div class="col-sm-6 img-col">
+                <img src="/{{ filename }}" class="upload-img">
+            </div>
+            <div class="col-auto d-flex">
+                <table>
+                    <tbody>
+                    {% for color in colors %}
+                    <tr>
+                        <td class="color-col" style="background-color: rgb{{ color }}"></td>
+                        <td class="text-col align-middle">Color RGB: {{ color }}</td>
+                    </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+{% include "footer.html" %}

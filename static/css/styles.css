@@ -1,0 +1,75 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #DFF6FF;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+footer {
+    padding: 2%;
+    text-align: center;
+    color: white;
+    background-color: #1A132F;
+    flex-shrink: 0;
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 5rem;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+.header {
+    background-image: url("/static/images/color-stripes.jpg");
+    padding: 3% 5%;
+    text-align: center;
+    color: white;
+}
+
+.form-container {
+    padding: 3% 15%;
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+}
+
+.form-control {
+    align: center;
+}
+
+.results-container {
+    padding: 0% 15% 3%;
+}
+
+.img-col {
+    text-align: center;
+}
+
+.upload-img {
+    width: 80%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.color-col {
+    width: 50px;
+}
+
+.text-col {
+    text-align: left;
+    padding: 0px 20px;
+}
