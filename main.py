@@ -39,7 +39,7 @@ def colors():
         file = request.files["file"]
         if file.filename != "" and allowed_file(file.filename):
             file.save(os.path.join(app.config["UPLOAD_FOLDER"], secure_filename(file.filename)))
-            filename = f"{app.config['UPLOAD_FOLDER']}{file.filename}"
+            filename = f"static/user-img/{file.filename}"
             top_ten_colors = process_colors(filename)
             return render_template("colors.html", filename=filename, colors=top_ten_colors)
         else:
