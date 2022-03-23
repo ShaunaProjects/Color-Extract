@@ -9,7 +9,7 @@ ALLOWED_EXTENSIONS = [".png", ".jpg", ".jpeg"]
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = os.environ.get("flask_key")
-app.config["UPLOAD_FOLDER"] = os.environ.get("upload_path")
+app.config["UPLOAD_FOLDER"] = "static/user-img/"
 Bootstrap(app)
 
 def process_colors(filename):
